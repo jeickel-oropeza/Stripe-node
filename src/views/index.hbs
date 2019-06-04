@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-md-4 mx-auto">
+        <div class="card">
+            <img src="https://www.freedomscientific.com/wp-content/uploads/2018/11/OpenBook_-_Product_Box_Image_1024x1024.jpg" alt="Product" class="card-img-top img-fluid">
+            <div class="card-body">
+                <h2>30 $</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis minima exercitationem officiis incidunt dolorem quod?
+                </p>
+            </div>
+            <div class="card-footer">
+                <form action="/checkout" method="POST">
+                    <script
+                        src="https://checkout.stripe.com/checkout.js"
+                        class="stripe-button"
+                        data-key="pk_test_xyOCxt41yUewQAsPbjEZphnw00UBXSomEE"
+                        data-name="Store"
+                        data-description="Software"
+                        data-amount="3000">
+                    </script>
+                    <script>
+                        document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+                    </script>
+                    <button class="btn btn-dark btn-block">
+                        Buy <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
